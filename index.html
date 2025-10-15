@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RazaWorks - Digital Solutions by Sahil Raza</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .testimonial-slide {
+            display: none;
+        }
+        .testimonial-slide.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fbfa] font-['Inter','Noto_Sans',sans-serif]">
+    <!-- Navigation -->
+    <header class="flex items-center justify-between border-b border-[#e8f2ec] px-4 py-3 md:px-10">
+        <div class="flex items-center gap-4 text-[#0e1a13]">
+            <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <h2 class="text-lg font-bold tracking-[-0.015em]">RazaWorks</h2>
+        </div>
+        <div class="flex items-center gap-4 md:gap-8">
+            <div class="hidden md:flex items-center gap-6">
+                <a class="text-sm font-medium hover:text-[#38e07b] transition-colors" href="#home">Home</a>
+                <a class="text-sm font-medium hover:text-[#38e07b] transition-colors" href="#services">Services</a>
+                <a class="text-sm font-medium hover:text-[#38e07b] transition-colors" href="#about">About</a>
+                <a class="text-sm font-medium hover:text-[#38e07b] transition-colors" href="#contact">Contact</a>
+            </div>
+            <button class="bg-[#38e07b] text-[#0e1a13] px-4 py-2 rounded-lg text-sm font-bold hover:bg-[#2bc467] transition-colors">
+                Get Started
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat px-4 py-10" style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXNapNDwEJLiSQ4UIXZhqFD4_xp0nANT-F2YFjhuckcpmcEb9teYz-Lzdnts_ObuWbgRfTVQ00qNrsE8Ryu_Iyt2QbIG_GEuCKigyyU_r3X0gP3KJb229LM5naxBt4Cq2sr8TaF6lYAaJYWQty9O2bmqia1xZerzqvIrbQ1EeVGQsr1R3mUBACvBFbLTttnG9FTb-KR88On0aiD10BEFKaJLeX3T52MSShchWdegk_5B0P-KfqVsoYH0Am3iGqo8jyd-ThnihtI2k");'>
+        <div class="text-center text-white max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-black leading-tight mb-4">
+                RazaWorks: Digital Solutions by Sahil Raza
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                With 3 years of experience, I deliver ATS-optimized resumes, social media management, custom websites, branding, and more to help you succeed.
+            </p>
+            <button class="bg-[#38e07b] text-[#0e1a13] px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#2bc467] transition-colors">
+                Book Now
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-32 h-32 md:w-48 md:h-48 bg-cover bg-center rounded-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZUb2qm3YGO_RA-Sm0fm9-M235ODmkGGBIdF-LV5zwgq_gwH0fNSdiPINl5p3idP7UX2F8ue4iEWMa5ulgf1nRM232iem8mgmExc1SrU5dAaa4PzGhTyYEzxMi92XOIQsRCHp9GX9oGYme4UfappFCpXYC1UPGdJ83y7AErWPvuR8BfzQLmt5MM-CkuELc6T8vCDI7B4m16qk1yX-q8DPLgYjtHiQVXGNA1V6G6jLWnr_bXTOu4UN07dUEDRwmS27ADINSnjz6aNE");'></div>
+                <div class="flex-1">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">I'm Sahil Raza</h2>
+                    <p class="text-lg text-[#51946c]">
+                        A digital freelancer with 3 years of experience. My services, from ATS resumes to custom websites and branding, provide tailored solutions to elevate your career or business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+                <p class="text-lg text-[#51946c] max-w-2xl mx-auto">
+                    We provide a comprehensive suite of digital services to meet your needs
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Cards -->
+                <div class="service-card bg-[#f8fbfa] border border-[#d1e6d9] rounded-lg p-6">
+                    <div class="text-[#0e1a13] mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="text-[#51946c] mb-4">Crafting responsive and user-friendly websites tailored to your brand's identity and goals.</p>
+                    <button class="bg-[#38e07b] text-[#0e1a13] px-4 py-2 rounded-lg text-sm font-bold w-full hover:bg-[#2bc467] transition-colors">
+                        Book Now
+                    </button>
+                </div>
+
+                <!-- Add more service cards here following the same pattern -->
+                <!-- I'll add a few more as examples -->
+                
+                <div class="service-card bg-[#f8fbfa] border border-[#d1e6d9] rounded-lg p-6">
+                    <div class="text-[#0e1a13] mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H216a8,8,0,0,0,0-16H115.32l112-112A16,16,0,0,0,227.32,73.37ZM136,75.31,152.69,92,68,176.69,51.31,160ZM48,208V179.31L76.69,208Zm48-3.31L79.32,188,164,103.31,180.69,120Zm96-96L147.32,64l24-24L216,84.69Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
+                    <p class="text-[#51946c] mb-4">Creating visually stunning designs that capture your brand's essence and resonate with your audience.</p>
+                    <button class="bg-[#38e07b] text-[#0e1a13] px-4 py-2 rounded-lg text-sm font-bold w-full hover:bg-[#2bc467] transition-colors">
+                        Book Now
+                    </button>
+                </div>
+
+                <div class="service-card bg-[#f8fbfa] border border-[#d1e6d9] rounded-lg p-6">
+                    <div class="text-[#0e1a13] mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M240,120a48.05,48.05,0,0,0-48-48H152.2c-2.91-.17-53.62-3.74-101.91-44.24A16,16,0,0,0,24,40V200a16,16,0,0,0,26.29,12.25c37.77-31.68,77-40.76,93.71-43.3v31.72A16,16,0,0,0,151.12,214l11,7.33A16,16,0,0,0,186.5,212l11.77-44.36A48.07,48.07,0,0,0,240,120ZM40,199.93V40h0c42.81,35.91,86.63,45,104,47.24v65.48C126.65,155,82.84,164.07,40,199.93Zm131,8,0,.11-11-7.33V168h21.6ZM192,152H160V88h32a32,32,0,1,1,0,64Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+                    <p class="text-[#51946c] mb-4">Implementing effective strategies to boost your online visibility and drive targeted traffic.</p>
+                    <button class="bg-[#38e07b] text-[#0e1a13] px-4 py-2 rounded-lg text-sm font-bold w-full hover:bg-[#2bc467] transition-colors">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-4 bg-[#f8fbfa]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">What Our Clients Say</h2>
+            <div class="bg-white rounded-lg p-8 shadow-lg">
+                <p class="text-xl italic mb-4">"Sahil's ATS resume got me hired! Professional and timely service."</p>
+                <p class="font-bold">- Ravi, Delhi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Payment Methods</h2>
+            <p class="text-lg mb-8">Secure, fast payments – request QR code via WhatsApp</p>
+            <button class="bg-[#38e07b] text-[#0e1a13] px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#2bc467] transition-colors">
+                Request Payment Link
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-[#f8fbfa]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Ready to Get Started?</h2>
+            <p class="text-lg mb-8">Contact us today to discuss your project and receive a personalized quote.</p>
+            <button class="bg-[#38e07b] text-[#0e1a13] px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#2bc467] transition-colors">
+                Contact Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e1a13] text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">RazaWorks</h3>
+                    <p>Digital Solutions by Sahil Raza</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#38e07b] transition-colors">Web Development</a></li>
+                        <li><a href="#" class="hover:text-[#38e07b] transition-colors">Graphic Design</a></li>
+                        <li><a href="#" class="hover:text-[#38e07b] transition-colors">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p>Email: contact@razaworks.com</p>
+                    <p>Phone: +91 XXXXX XXXXX</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-[#38e07b] transition-colors">WhatsApp</a>
+                        <a href="#" class="hover:text-[#38e07b] transition-colors">Instagram</a>
+                        <a href="#" class="hover:text-[#38e07b] transition-colors">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p>&copy; 2024 RazaWorks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add hover effects to service cards
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
